@@ -1,0 +1,126 @@
+.nav-item:hover {
+  cursor: pointer;
+}
+.single-product {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #e6f8f8;
+    padding: 15px;
+    
+  }
+
+.single-product:hover {
+    box-shadow: 4px 4px 7px gray;
+    border-radius: 10px;
+    }
+  
+.product-image {
+    width: 250px;
+    height: 300px;
+    margin-top: 10px;
+  }
+#All_products{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between; 
+   
+}
+.n1{
+    padding: 5px;
+}
+
+#postModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 90vh; /* Adjust for better mobile view */
+  overflow-y: auto; /* Enable scrolling for the content */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border-radius: 10px;
+}
+#postModal h3 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+  position: relative; 
+}
+#c_btn {
+  position: absolute; 
+  top: 70px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+@media (max-width: 768px) {
+  #postModal {
+      width: 95%;
+      max-width: none;
+      left: 50%; 
+  }
+
+  table, thead, tbody, th, td, tr {
+      display: block;
+      width: 100%;
+  }
+
+  thead {
+      display: none; 
+  }
+
+  tr {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+  }
+
+  td {
+      display: block;
+      text-align: left;
+      padding-left: 0 !important;
+      border: none;
+  }
+
+  td:first-child {
+      padding-bottom: 10px;
+  }
+
+  td:nth-child(2):before {
+      content: "Details: ";
+      font-weight: bold;
+  }
+
+  td:nth-child(3):before {
+      content: "Quantity: ";
+      font-weight: bold;
+  }
+
+  td:nth-child(4):before {
+      content: "Total Price: ";
+      font-weight: bold;
+  }
+
+  td:nth-child(5):before {
+      content: "Action: ";
+      font-weight: bold;
+  }
+
+  .d-flex {
+      justify-content: flex-start !important;
+  }
+}
